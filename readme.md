@@ -1,10 +1,11 @@
-## LLC Ecommerce
+## Laravel Ecommerce
 
-LLC Ecommerce is an open source ecommerce platform management system using laravel
+Laravel Ecommerce is an open source ecommerce platform management system using laravel
 
 ## Packages Used
 
--
+- composer require barryvdh/laravel-debugbar --dev
+- Laravel ide helper
 
 ## Installation Instructions
 
