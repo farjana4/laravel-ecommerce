@@ -6,6 +6,12 @@ Laravel Ecommerce is an open source ecommerce platform management system using l
 
 - composer require barryvdh/laravel-debugbar --dev
 - Laravel ide helper
+        1. composer require --dev barryvdh/laravel-ide-helper
+        2. php artisan vendor:publish --provider="Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider" --tag=config
+            2.1 configure the file of config/ide-helper.php
+                2.1.1. 'include_fluent' => true,
+                2.1.2. 'include_helpers' => true,
+        3. php artisan ide-helper:generate
 
 ## Installation Instructions
 
