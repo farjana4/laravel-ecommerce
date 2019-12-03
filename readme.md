@@ -13,6 +13,7 @@ Laravel Ecommerce is an open source ecommerce platform management system using l
                 2.1.2. 'include_helpers' => true,
             2.2. php artisan ide-helper:generate
             2.3 composer require doctrine/dbal
+            2.4 php artisan ide-helper:models  //every time run this command after adding new model
 
 ## Installation Instructions
 
