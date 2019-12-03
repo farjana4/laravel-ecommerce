@@ -21,7 +21,7 @@ class CreateProductsTable extends Migration
             $table->longText('description');
             $table->tinyInteger('in_stock')->default(1);
             $table->decimal('price', 8, 2);
-            $table->decimal('sell_price', 156)->nullable();
+            $table->decimal('sell_price', 8, 2)->nullable();
             $table->tinyInteger('active')->default(1);
             $table->timestamps();
         });

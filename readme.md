@@ -2,6 +2,14 @@
 
 Laravel Ecommerce is an open source ecommerce platform management system using laravel
 
+## Laravel 5.7 before migration setup
+    1. app>Providers>AppServiceProvider.php
+            public function boot()
+                {
+                    schema::defaultStringLength(191);   // using this line for avoiding error of after create tables and run command php artisan migrate
+                }
+    2. use Illuminate\Support\Facades\Schema;  // using this line for avoiding error of after create tables and run command php artisan migrate
+
 ## Packages Used
 
 - composer require barryvdh/laravel-debugbar --dev

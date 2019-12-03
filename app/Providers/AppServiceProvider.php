@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;  // using this line for avoiding error of after create tables and run command php artisan migrate
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +24,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        schema::defaultStringLength(191);   // using this line for avoiding error of after create tables and run command php artisan migrate
     }
 }
